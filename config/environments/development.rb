@@ -36,6 +36,9 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  #Allowing work from multiple machines
+  config.action_cable.disable_request_forgery_protection = true
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
